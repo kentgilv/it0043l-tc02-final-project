@@ -7,9 +7,9 @@
 
 header {
     width: 100%;
-    position: fixed;
     background-image: linear-gradient(#04BADE, #55E2E9);
     padding: 5px;
+    position: fixed;
     align-items: center;
     backdrop-filter: blur(0);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -27,23 +27,18 @@ nav li:first-child{
 }
 
 nav li, button {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
     font-family: "Montserrat";
     font-weight:800;
     font-size: 16px;
     color: #edf0f1;
-    text-decoration: none;
 }
 
-nav a {
-    transition: all 0.3s ease 0s;
-    height: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+nav a{
+    color: #edf0f1;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: white;
-
 }
 
 nav a:hover{
@@ -51,25 +46,20 @@ nav a:hover{
 }
 
 button {
-    background: none;
+    background: transparent;
     padding: 9px 25px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-
 
 }
-
 .log-in-button {
-    border: solid;
+    border-style: solid;
+    border-radius: 50px;
     border-color: #edf0f1;
 
 }
 .sign-up-button {
     border: none;
-    background-color: #006CA5;
-
-
+    border-radius: 50px;
+    background-color: #0077B6;
 }
 
 button:hover {
