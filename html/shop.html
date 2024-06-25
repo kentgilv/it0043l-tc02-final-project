@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokemon Go Web Store</title>
+        <link rel="stylesheet" href="css\shop-style.css">
+    <body>
+        <header>
+            <nav>  
+                <ul>
+                    <li><a href="#"><img src="images\pokemon-go-logo.png" class="logo" alt="Pokemon Logo" height="50px"></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href=""><button class="log-in-button">Log In</button></a></li>
+                    <li><a href=""><button class="sign-up">Sign Up</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero-section">
+            <img src="images\pokemon-go-wallpaper.jpg" alt="Pokemon Go" width="100%">
+        </div>
+        <section id="hero">
+            <div class="container">
+                <div class="info">
+                    <h1>Pokemon Go Fest 2024: Global Ticket</h1>
+                    <h2>LIMITED-TIME ONLY</h2>
+                    <p>P439.10</p>
+                </div>
+            </div>
+
+        </section>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+            <script>
+                function showSidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = "flex"
+                }
+                function hideSidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
+        </nav>
+
+
+
+
+
+       
+
+        <div>
+            <p>Pokecoins</p>
+        </div>
+        <div>
+            <p>600</p>
+        </div>
+
+        <div>
+            <p>1,300</p>
+        </div>
+
+        <div>
+            <p>2,700</p>
+        </div>
+        <div>
+            <p>5,600</p>
+        </div>
+
+        <div>
+            <p>15,500</p>
+        </div>
+
+
+
+    </body>
 </html>
