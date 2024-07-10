@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="register.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
     <img src="images/pokemon-go-fest-2024-logo.png" alt="Pokemon GO Logo" class="bg-logo">
@@ -35,7 +35,7 @@
 
                 <button type="submit" class="btn">Register</button>
 
-                <p class="login-link">Already have an account? <a href="Login-in.html">Log in here</a></p>
+                <p class="login-link">Already have an account? <a href="Login Page.html">Log in here</a></p>
             </form>
             <div id="hiddenMessage" class="hidden">
                 <h2>Registration Successful!</h2>
@@ -48,5 +48,28 @@
         <p>&copy; Niantic, Inc. All Rights Reserved.</p>
         <p>For educational purposes only and no copyright infringement is intended.</p>
     </footer>
+    <script>
+        // Function to handle form submission
+        function register(event) {
+            event.preventDefault(); // Prevent form from submitting the traditional way
+
+            // Get form input values
+            var firstName = document.getElementById('firstname').value;
+            var lastName = document.getElementById('lastname').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            // Check if passwords match
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                return;
+            }
+
+            // If everything is correct, show the hidden message
+            document.getElementById('registerform').classList.add('hidden');
+            document.getElementById('hiddenMessage').classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>
