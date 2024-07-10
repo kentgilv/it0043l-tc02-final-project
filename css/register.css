@@ -1,73 +1,90 @@
+/* Resets box-sizing to border-box for all elements and removes default margin and padding */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Styles for the body element */
 body {
     font-family: Arial, sans-serif;
-    background: url('images/pokemon-go-wallpaper.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: url('images/pokemon-go-wallpaper.jpg') no-repeat center center fixed; /* Sets the background image */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
 }
 
+/* Styles for the content container */
 .content {
     flex: 1;
     text-align: center;
     padding: 20px;
 }
 
+/* Styles for the registration form container */
 .register-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 900px;
-    width: 125%;
+    width: 100%;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
     padding: 20px;
     margin-bottom: 20px; 
 }
 
+/* Styles for the background logo */
 .bg-logo {
     position: absolute;
     top: 20px; 
     left: 20px; 
     width: 100px; 
-    z-index: 1; 
+    z-index: 1; /* Ensures the logo is on top */
 }
 
+/* Styles for the form logo */
 .logo {
     width: 50px;
     height: auto;
     margin-left: 10px;
 }
 
+/* Styles for the form header */
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for the form */
 form {
     width: 100%;
 }
 
+/* Styles for the heading */
 h2 {
     margin-bottom: 20px;
     color: #333;
 }
 
+/* Styles for the labels */
 label {
     display: block;
     margin-bottom: 8px; 
     color: #333;
 }
 
+/* Styles for the input fields */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: calc(100% - 20px);
+    width: calc(100% - 20px); /* Ensures input fields are fully responsive */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -75,6 +92,7 @@ input[type="password"] {
     margin-bottom: 10px;
 }
 
+/* Styles for the submit button */
 .btn {
     width: 90%;
     padding: 10px;
@@ -84,32 +102,38 @@ input[type="password"] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Adds a transition effect */
 }
 
+/* Hover effect for the button */
 .btn:hover {
     background-color: #45a049;
 }
 
+/* Styles for the login link */
 .login-link {
     margin-top: 15px;
     font-size: 14px;
 }
 
+/* Styles for the login link anchor */
 .login-link a {
     color: #4CAF50;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Hover effect for the login link anchor */
 .login-link a:hover {
     text-decoration: underline;
 }
 
+/* Styles for hidden elements */
 .hidden {
     display: none;
 }
 
+/* Styles for the footer */
 footer {
     text-align: center;
     padding: 10px;
@@ -117,4 +141,35 @@ footer {
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     margin-top: auto; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .register-grid {
+        width: 90%;
+    }
+
+    .form-header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-grid {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
