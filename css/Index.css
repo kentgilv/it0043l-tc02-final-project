@@ -1,0 +1,330 @@
+
+.navbar {
+    background-color: #ffffff;
+    padding: 45px;
+    height: 20px;
+    box-shadow: 0 0 8px 0 #00000046;
+}
+
+.navbar h1{
+    position: absolute;
+    padding: 0 5%;
+    margin: auto 5% auto 10%;
+    font-family:'Trebuchet MS', Arial, sans-serif;
+    font-weight: bold;
+    color: #198496
+}
+
+.navbar img{
+    width: auto;
+    position: absolute;
+    height: 4rem;
+    padding: 8px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    margin-top: -20px;
+}
+
+.navbar img:hover{
+    box-shadow: 0 0 8px 0 #00000046;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn{
+    background-image: linear-gradient(319.49deg, #07c4c4 1.87%, #96cf9c 109.19%);
+    font-family:'Trebuchet MS', Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0px 7px;
+    padding: 15px 18px;
+    float: right;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 1px solid #00000000;
+}
+
+.btn:hover{
+    background-image: linear-gradient(319.49deg, #158a84 1.87%, #158a84 109.19%);
+}
+
+body{
+    background-image: linear-gradient(319.49deg, #07c4c4 1.87%, #96cf9c 109.19%);
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+.video-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+video {
+     width: 1200px;
+    height: 678px;
+    border: 8px solid #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 #00000046;
+ 
+}
+
+.logo {
+    margin: 6% 20%;
+    height: auto;
+    width: 250px;
+}
+
+
+.pokeball {
+    display: block;
+    width: 192px;
+    height: 192px;
+    background: radial-gradient(
+            white 16px,
+            black 17px 18px,
+            white 19px 24px,
+            black 25px 32px,
+            transparent 33px
+        ),
+        linear-gradient(to bottom, red 0 80px, black 81px 96px, white 97px 100%);
+    border-radius: 50%;
+    border: 8px solid black;
+    box-shadow: inset -16px -8px 0 0 rgba(0, 0, 0, 0.2);
+    animation: fall 0.5s ease-in-out, 
+               shake 1.25s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.5s infinite,
+               catch 0.5s ease-out 1.75s infinite;
+    margin: 0 auto 20px; /* Center the Pokéball horizontally and add bottom margin */
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0) rotate(0);
+    }
+    20% {
+        transform: translateX(-10px) rotate(-20deg);
+    }
+    30% {
+        transform: translateX(10px) rotate(20deg);
+    }
+    50% {
+        transform: translateX(-10px) rotate(-10deg);
+    }
+    60% {
+        transform: translateX(10px) rotate(10deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0);
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-200%);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin-bottom: 5%;
+}
+
+.container {
+    margin-bottom: 5%;
+    display: flex;
+    height: 70vh;
+}
+
+.left-side {
+    background: #0f4c81;
+    color: white;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+    background-color: rgb(15, 71, 94);
+    background-size: cover;
+}
+
+.left-side img {
+    width: 25px;
+    margin-bottom: 50px;
+}
+
+.left-side h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.left-side p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.right-side {
+    flex: 1;
+    background: url('https://github.com/kentgilv/it0043l-tc02-final-project/blob/main/images/pokemon-go-wallpaper.jpg?raw=true') no-repeat center center;
+    background-size: cover;
+}
+
+
+.twogrid{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-image: linear-gradient(319.49deg, #6ab7c6 1.87%, #26548e 109.19%);
+    display: grid;
+    align-items: center; 
+    grid-template-columns: auto auto;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px 0 #00000046;
+}
+
+
+#dl{
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 8%;
+    margin-right: 5%;
+    margin-left: 13%;
+}
+
+.apple{
+    margin-left: 15%;
+    margin-bottom: 9%;
+    margin-top: 10px;
+    height: auto;
+    width: 18%;
+    cursor: pointer;
+}
+
+.gplay{
+    margin-left: 2%;
+    margin-bottom: 9%;
+    margin-top: 10px;
+    height: auto;
+    width: 18%;
+    cursor: pointer;
+}
+
+.galaxy{
+    margin-left: 2%;
+    margin-bottom: 9%;
+    margin-top: 10px;
+    height: auto;
+    width: 18%;
+    cursor: pointer;
+}
+
+
+
+footer{
+    background-image: linear-gradient(319.49deg, #345874 1.87%, #57998c 109.19%);
+    width: 100%;
+    height: auto;
+}
+
+.footer-grid{
+    grid-template-columns: auto auto auto;
+    display: grid;
+}
+
+.footer-container{
+    align-items: center;
+    font-family:'Trebuchet MS', Arial, sans-serif;
+    color: #ffffff;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    margin-left: 23%;
+}
+
+.footer-container td{
+    padding-top: 20px;
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.footer-container td:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.footer-container-socials{
+    margin: 27% 10% 0 10%;
+    float:  left;
+    align-items: center;
+}
+
+.footer-container-socials svg{
+    width: 10%;
+    height: auto;
+    padding-right: 5%;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
+
+.footer-container-logos{
+    padding-top: 20px;
+    margin-top: 8%;
+}
+
+.footer-container-logos #pokemon-company{
+    padding-right: 5%;
+    margin-left: 10%;
+}
+
+
+footer hr{
+    width: 80%;
+}
+
+footer p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#pokemon-company, #niantic{
+    cursor: pointer;
+}
+
+#grouplogo{
+    position: absolute;
+    margin-top: 20%;
+    width: auto;
+    height: 70px;
+}
+
+
