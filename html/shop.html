@@ -27,8 +27,92 @@
             <a href="registration.html" class="link" id="sign-up-link">Sign Up</a>
             <img src="../icons/menu-icon.svg" id="menu-icon" alt="">
         </header>
-        <section>
-            <img src="../images/pokemon-go-wallpaper.jpg" alt="Pokemon Go Wallper" id="banner">
-        </section>
+        <div class="title-container">
+            <h1>Web Store</h1>
+    
+            <a href="Transaction History.html"><h2 class="Transaction">Transaction History</h2></a>
+            
+            <button class="cart" onclick="toggleDropdown()"><img src="https://pnghq.com/wp-content/uploads/pnghq.com-shopping-cart-icon-png-wi-3.png"></button>
+                <div class="cart-dropdown-content" id="cart">
+                    <p id="cart-content">Cart is Empty</p>
+                    <p id="total-price">Total Price: $0</p>
+                    <a href="Checkout.html" onclick="checkout()"><p id="checkout">Checkout</p></a>
+                </div>
+        </div>
+    
+        <div class="item-container">
+            <h1>Featured Item</h1>
+            <div class="featured-item">
+                <h1>Pokémon GO Fest 2024: Global Ticket</h1>
+                <img class="main" src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fweb-go-fest-2024-ticket.png&w=384&q=75" alt="Featured Item">
+                <img class="mini" src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_global_event_ticket.png&w=48&q=75" alt="Featured Item">
+                <img class="mini" src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Favatar_f_shirt_gofest2024gray.png&w=48&q=75" alt="Featured Item">
+                <img class="mini" src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Favatar_m_shirt_gofest2024gray.png&w=48&q=75" alt="Featured Item">
+                <p class="bonus">LIMITED-TIME ONLY</p>
+                <p class="price">₱439.10</p>
+                <button class="addtocart" onclick="addToCart('Pokémon GO Fest 2024: Global Ticket', 439.10)">Add to Cart</button>
+    
+            </div>
+    
+            <h1>Item Boxes</h1>
+            <div class="featured-item">
+                <h1>Wonder Ticket</h1>
+                <img class="main" src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fweb-zarude-ticket-box.png&w=384&q=75" alt="Featured Item">
+                <img class="mini" src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_paid_raid_ticket.png&w=48&q=75" alt="Featured Item">
+                <p class="bonus">Web Exclusive</p>
+                <p class="price">₱289.00</p>
+                <button class="addtocart" onclick="addToCart('Wonder Ticket', 289.00)">Add to Cart</button>
+    
+            </div>
+    
+            <h1>PokéCoins</h1>
+            <div class="grid">
+                <div class="item-box">
+                    <h1>600 PokéCoins</h1>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fcoin-bundle-xsmall.png&w=384&q=75" alt="Item 1">
+                    <p class="bonus">50 WEB STORE BONUS COINS</p>
+                    <p class="price">₱149.00</p>
+                    <button class="addtocart" onclick="addToCart('600 PokéCoins', 149.00)">Add to Cart</button>
+    
+                </div>
+            
+                <div class="item-box">
+                    <h1>1,300 PokéCoins</h1>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fcoin-bundle-small_v2.png&w=384&q=75" alt="Item 2">
+                    <p class="bonus">100 WEB STORE BONUS COINS</p>
+                    <p class="price">₱289.00</p>
+                    <button class="addtocart" onclick="addToCart('1,300 PokéCoins', 289.00)">Add to Cart</button>
+    
+                </div>
+                
+                <div class="item-box">
+                    <h1>2,700 PokéCoins</h1>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fcoin-bundle-medium_v2.png&w=384&q=75" alt="Item 2">
+                    <p class="bonus">200 WEB STORE BONUS COINS</p>
+                    <p class="price">₱589.00</p>
+                    <button class="addtocart" onclick="addToCart('2,700 PokéCoins', 589.00)">Add to Cart</button>
+    
+                </div>
+    
+                <div class="item-box">
+                    <h1>5,600 PokéCoins</h1>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fcoin-bundle-large-v2.png&w=384&q=75" alt="Item 2">
+                    <p class="bonus">400 WEB STORE BONUS COINS</p>
+                    <p class="price">₱1,169.00</p>
+                    <button class="addtocart" onclick="addToCart('5,600 PokéCoins', 1,169.00)">Add to Cart</button>
+    
+                </div>
+    
+                <div class="item-box">
+                    <h1>15,500 PokéCoins</h1>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fcoin-bundle-xlarge.png&w=384&q=75" alt="Item 2">
+                    <p class="bonus">1000 WEB STORE BONUS COINS</p>
+                    <p class="price">₱2,950.00</p>
+                    <button class="addtocart" onclick="addToCart('15,500 PokéCoins', 2,950)">Add to Cart</button>
+    
+                </div>
+            
+            </div>
+        </div>
     </body>
 </html>
